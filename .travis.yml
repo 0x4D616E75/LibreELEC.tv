@@ -12,12 +12,12 @@ env:
     - PROJECT:Odroid_C2 ARCH=aarch64
 
 before_install:
-- apt-get -qq update
-- apt-get install -y sudo xz-utils git
-- apt-get install -y sudo gcc make
-- apt-get install -y wget bash bc sed patch tar bzip2 gzip perl gawk gperf zip unzip diffutils texinfo lzop 
-- apt-get install -y g++ xfonts-utils xfonts-utils xfonts-utils xsltproc default-jre mkimage
-- apt-get install libc6-dev libncurses5-dev
-- apt-get install u-boot-tools
+- sudo apt-get -qq update
+- sudo apt-get install -y sudo xz-utils git
+- sudo apt-get install -y sudo gcc make
+- sudo apt-get install -y wget bash bc sed patch tar bzip2 gzip perl gawk gperf zip unzip diffutils texinfo lzop 
+- sudo apt-get install -y g++ xfonts-utils xfonts-utils xfonts-utils xsltproc default-jre mkimage
+- sudo apt-get install libc6-dev libncurses5-dev
+- sudo apt-get install u-boot-tools
 
 script: make
