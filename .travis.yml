@@ -20,4 +20,4 @@ before_install:
 - sudo apt-get install libc6-dev libncurses5-dev
 - sudo apt-get install u-boot-tools
 
-script: make
+script: travis_wait make > /dev/null 2>&1
