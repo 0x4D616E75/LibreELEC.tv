@@ -14,7 +14,7 @@ cache:
 os:
     - linux
 
-sudo: true
+sudo: false
 
 addons:
   apt:
