@@ -1,15 +1,15 @@
 language: cpp
 
-dist: trusty
+#dist: trusty
 
 compiler:
     - gcc
 
-cache: 
-  ccache: true 
-  directories:
-    - sources
-    - .ccache
+#cache: 
+#  ccache: true 
+#  directories:
+#    - sources
+#    - .ccache
 
 os:
     - linux
