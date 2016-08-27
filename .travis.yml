@@ -1,7 +1,5 @@
 language: cpp
 
-dist: trusty
-
 compiler:
     - gcc
 
@@ -14,7 +12,7 @@ cache:
 os:
     - linux
 
-sudo: required
+sudo: false
 
 addons:
   apt:
@@ -46,6 +44,7 @@ addons:
     - libc6-dev
     - libncurses5-dev
     - u-boot-tools
+    - libxml-parser-perl
 
 env:
     - CCACHE_DIR=.ccache PROJECT=Odroid_C2 ARCH=aarch64
