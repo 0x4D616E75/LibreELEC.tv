@@ -9,6 +9,7 @@ cache:
   ccache: true 
   directories:
     - sources
+    - .ccache
 
 os:
     - linux
@@ -47,6 +48,6 @@ addons:
     - u-boot-tools
 
 env:
-    - PROJECT=Odroid_C2 ARCH=aarch64
+    - CCACHE_DIR=.ccache PROJECT=Odroid_C2 ARCH=aarch64
 
 script: ./.travis_build.sh
