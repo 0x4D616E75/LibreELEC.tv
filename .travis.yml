@@ -5,7 +5,8 @@ dist: trusty
 compiler:
     - gcc
 
-cache: ccache
+cache: 
+  ccache: true 
   directories:
     - sources
 
